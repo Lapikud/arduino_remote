@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.button {
+  /*background-color: red; !* Green *!*/
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    border-radius: 12px;
+}
+
+.red {background-color: red;}
+
+.blue {background-color: blue;}
+
+.blink {background-color: black;}
+</style>
+    <meta charset="UTF-8">
+    <title>Tuli</title>
+</head>
+<body>
+    <h1>tuli</h1>
+    <a href="/red"><button class="button red">RED</button></a>
+
+    <br>
+    <a href="/blue"><button class="button blue">BLUE</button></a>
+    <br>
+    <a href="/blink"><button class="button blink">BLINK</button></a>
+    <br>
+
+    <form action="/led" method="post"><input type="submit" name="cmd" value="t">
+    <input type="submit" name="cmd" value="q">
+    <input type="submit" name="cmd" value="w"></form>
+    <!--<a href="/toggle">TOGGLE</a>-->
+    <!--{{olek}}-->
+    <!--<form action="/toggle" method="post"><input type="submit" name="tuli" value="1"></form>-->
+    <!--<form action="/on"><input type="submit" name="tuli" value="0"></form>-->
+</body>
+</html>
